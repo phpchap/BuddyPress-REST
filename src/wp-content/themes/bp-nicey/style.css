@@ -1,0 +1,27 @@
+/*  
+Theme Name: Bp Nicey
+Theme URI: http://buddydev.com/buddypress/bp-nicey-a-simple-and-clean-child-theme-for-buddypress/
+Description: A Light Blue Nice looking child theme for buddypress
+Version: 1.2.1
+Author: BuddyDev,Cosmic Coders
+Author URI: http://buddydev.com
+Tags: buddypress, three-columns, white, blue, child,flexible-width
+Template: bp-default
+*/
+
+/* Font styles */
+@import url(../../plugins/buddypress/bp-themes/bp-default/_inc/css/default.css );
+
+/* Layout styles for home page, internal pages and blog/directory pages */
+@import url( _inc/css/layout/home-page/2c-right.css );
+@import url( _inc/css/layout/blog-dir-pages/2c-right.css );
+
+/* Default theme admin bar styles */
+
+@import url( _inc/css/adminbar.css );
+
+/* Default theme styles */
+@import url( _inc/css/screen.css );
+
+/* Uncomment the following line and add your custom styles to '_inc/css/custom.css' */
+/* @import url( _inc/css/custom.css ); */
