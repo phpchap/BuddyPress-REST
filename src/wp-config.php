@@ -33,6 +33,13 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** dirty hack to get the PHPunit / REST API working **/
+if(empty($_SERVER['HTTP_HOST']) || 
+        is_int(stripos($_SERVER['REQUEST_URI'],'api'))) {
+    return ;    
+}
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -79,6 +86,10 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+
+// use the buddy bar!
+//define('BP_USE_WP_ADMIN_BAR', true);
+
 
 /* That's all, stop editing! Happy blogging. */
 
